@@ -1,2 +1,5 @@
 .ipynb_checkpoints
 .venv
+db.sqlite3
+credentials.json
+__pycache__
