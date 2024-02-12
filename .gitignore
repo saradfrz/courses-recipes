@@ -1,5 +1,68 @@
-.ipynb_checkpoints
-.venv
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.sqlite3
 db.sqlite3
-credentials.json
-__pycache__
+*.db
+
+# Logs
+*.log
+
+# Static files
+/static/
+
+# Media files
+/media/
+
+# Secret key
+*.key
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
+.venv
+.env/
+
+# IDE files
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.idea/
+*.suo
+*.ntvs*
+
+# Ignore pipenv virtual environment
+Pipfile.lock
+
+# Ignore local development settings
+local_settings.py
+
+# Ignore database settings
+settings.py
+
+# Ignore migrations
+/migrations/
+
+# Ignore generated files
+*.csv
+
+# Ignore compiled Python modules
+*.pyc
+
+# Ignore backup files
+*~
+
+# Ignore test database
+*.sqlite3
+
+# Ignore Docker related files
+Dockerfile
+docker-compose.yml
+
+# Ignore secrets
+secrets.json
