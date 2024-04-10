@@ -1,72 +1,130 @@
-# Custom
-cards.tsv
-text.txt
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
 
-# Byte-compiled / optimized / DLL files
-__pycache__/
+# Backup files #
+*.bak
+
+# If you are using PyCharm #
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+.idea/**/gradle.xml
+.idea/**/libraries
+*.iws /out/
+
+# Python #
 *.py[cod]
 *$py.class
 
-# Caches
-*.sqlite3
-db.sqlite3
-*.db
+# Distribution / packaging
+.Python build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
 
-# Logs
-*.log
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Static files
-/static/
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
 
-# Media files
-/media/
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Secret key
-*.key
+# pyenv
+.python-version
 
-# Environment variables
+# celery
+celerybeat-schedule.*
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
 .env
-
-# Virtual environment
-venv/
 .venv
-.env/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
-# IDE files
-.vscode/
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# Sublime Text #
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-.idea/
-*.suo
-*.ntvs*
 
-# Ignore pipenv virtual environment
-Pipfile.lock
+# sftp configuration file
+sftp-config.json
 
-# Ignore local development settings
-local_settings.py
+# Package control specific files Package
+Control.last-run
+Control.ca-list
+Control.ca-bundle
+Control.system-ca-bundle
+GitHub.sublime-settings
 
-# Ignore database settings
-settings.py
+# Visual Studio Code #
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history
 
-# Ignore migrations
-/migrations/
-
-# Ignore generated files
-*.csv
-
-# Ignore compiled Python modules
+# Personal additions
+__pycache__/
 *.pyc
-
-# Ignore backup files
-*~
-
-# Ignore test database
-*.sqlite3
-
-# Ignore Docker related files
-Dockerfile
-docker-compose.yml
-
-# Ignore secrets
-secrets.json
+__localcode
+venv
+env
+.DS_Store
+local_settings.py
+_local_settings.py
+gunicorn-error-log
+db.sqlite3
+db copy.sqlite3
+static/
