@@ -1,7 +1,4 @@
 from django.shortcuts import get_list_or_404, get_object_or_404, render
-from django.http import Http404
-from utils.recipes.factory import make_recipe
-
 from recipes.models import Recipe
 
 
@@ -11,14 +8,9 @@ def home(request):
     ).order_by('-id')
     
     
-    if not recipes:
-        raise Http404('Not found 🥲')
-    
     return render(request, 'recipes/pages/home.html', context={
         'recipes': recipes,
-        'title': f'{recipes.first().category.name} - Category | '
     })
-
 
 def category(request, category_id):
     recipes = get_list_or_404(
