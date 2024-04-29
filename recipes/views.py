@@ -6,11 +6,11 @@ def home(request):
     recipes = Recipe.objects.filter(
         is_published=True
     ).order_by('-id')
-    
-    
+
     return render(request, 'recipes/pages/home.html', context={
         'recipes': recipes,
     })
+
 
 def category(request, category_id):
     recipes = get_list_or_404(
